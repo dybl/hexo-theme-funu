@@ -1,0 +1,18 @@
+<a href="https://github.com/" class="tooltipped" target="_blank" data-tooltip="-> Gituhb"
+    data-position="top" data-delay="50">
+    <i class="fa fa-github fa-lg"></i>
+</a>
+<a href="https://twitter.com" class="tooltipped" data-tooltip="-> Twitter" data-position="top" data-delay="50">
+    <i class="fa fa-twitter fa-lg"></i>
+</a>
+<a href="https://facebook.com" class="tooltipped" data-tooltip="-> Facebook" data-position="top" data-delay="50">
+    <i class="fa fa-facebook-official fa-lg"></i>
+</a>
+<a href="https://instagram.com" class="tooltipped" data-tooltip="-> Ins" data-position="top" data-delay="50">
+    <i class="fa fa-instagram fa-lg"></i>
+</a>
+<% if (config.feed && config.feed.path == 'atom.xml') { %>
+<a href="<%- url_for('/atom.xml') %>" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+    <i class="fa fa-rss"></i>
+</a>
+<% } %>
